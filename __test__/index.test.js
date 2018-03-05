@@ -57,9 +57,6 @@ const stations = {
   kfive: new Set(['ca', 'az']),
 };
 
-const dyn1 = 'fish';
-const dyn2 = 'dish';
-
 it('bubble sort', () => {
   expect(bubbleSort(arrToSort)).toEqual(arrSorted);
 });
