@@ -1,0 +1,50 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "start": "dist/bin/start.js"
+  },
+  "engines": {
+    "node": "9"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "babel-node": "babel-node",
+    "eslint": "eslint",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "nodemon": "nodemon --exec babel-node -- src/bin/start"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Yorickov",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-jest": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jest": "*",
+    "jest": "*",
+    "jest-cli": "*"
+  },
+  "dependencies": {}
+}
